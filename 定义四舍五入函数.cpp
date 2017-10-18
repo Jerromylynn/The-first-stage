@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-	double x,z;
+	double x;
 	int y;
-	printf("请输入一个数："); scanf("%lf\n",x); 
+	printf("请输入一个数：");scanf("%lf",&x) ;
 	y=x;
-	z=x-y;
-	printf("整数部分为：%d\n",y);
-	printf("小数部分为：%d\n",z);
-
-    return 0;	
-}
+	if (x-y>=0.5)
+	y+=1;
+	printf("四舍五入后的结果为：%d\n",y);
+	return 0;
+	
+} 
